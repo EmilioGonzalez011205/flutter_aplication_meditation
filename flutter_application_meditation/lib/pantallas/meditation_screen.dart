@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_meditation/pantallas/session_feedback.dart';
 
 class MeditationScreen extends StatelessWidget {
   const MeditationScreen({super.key});
@@ -124,13 +125,41 @@ class MeditationScreen extends StatelessWidget {
               right: 185,
               child: Image.asset("lib/images/PALOMA.png", height: 130),
             ),
+            Positioned(
+              top: 230,
+              left:50,
+              child: Container(
+                height: 25,
+                width: 25,
+                decoration: BoxDecoration(
+                  color:Colors.white,
+                  shape: BoxShape.circle,
+                ),
+              )
+            ),
+            Positioned(
+              top: 200,
+              left:25,
+              child: Container(
+                height: 15,
+                width: 15,
+                decoration: BoxDecoration(
+                  color:Colors.white,
+                  shape: BoxShape.circle,
+                ),
+              )
+            ),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: SizedBox(
         height: 80,
         width: 80,
-          child: FloatingActionButton(onPressed: (){},
+          child: FloatingActionButton(onPressed: (){
+            Navigator.pushReplacement(context, 
+            MaterialPageRoute(builder: (context) => SessionFeedback())
+            );
+          },
           elevation: 0,
           backgroundColor:  Color(0xff583823),
           shape:RoundedRectangleBorder(
