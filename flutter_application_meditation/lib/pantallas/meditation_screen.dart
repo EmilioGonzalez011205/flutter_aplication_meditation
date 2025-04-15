@@ -38,6 +38,7 @@ class MeditationScreen extends StatelessWidget {
             ),
             Positioned(
             top:375,
+            left: -45,
             child:Transform.rotate(
               angle: 0.550,
                 child: Container(
@@ -69,7 +70,74 @@ class MeditationScreen extends StatelessWidget {
               ),
               ),
             ),
+              Positioned(
+                height: 850,
+                top: 200,
+                left: 0,
+                right: 0,
+                child: Image.asset('lib/images/MEDITATION1.png', fit: BoxFit.fitWidth,),
+              ),
+            Positioned(
+              left: 0,
+              right: 0,
+              top: 870,
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  text: "Nature Your ",
+                  style: TextStyle(
+                    color: Color(0xff583823),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  children: [
+                  TextSpan(
+                  text: " Paceful mind ",
+                  style: TextStyle(
+                    color: Color(0xffed6420),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,)
+                    ),
+                    TextSpan(
+                    text: "With AI",
+                    style: TextStyle(
+                      color: Color(0xff583823),
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,)
+                      ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              top: 240,
+              left: -65,
+              child: Image.asset("lib/images/NUBE.webp", height: 100),
+            ),
+            Positioned(
+              top: 335,
+              right: -55,
+              child: Image.asset("lib/images/NUBE.webp", height: 100),
+            ),
+            Positioned(
+              top: 100,
+              right: 185,
+              child: Image.asset("lib/images/PALOMA.png", height: 130),
+            ),
         ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: SizedBox(
+        height: 80,
+        width: 80,
+          child: FloatingActionButton(onPressed: (){},
+          elevation: 0,
+          backgroundColor:  Color(0xff583823),
+          shape:RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(40),
+          ),
+          child: Icon(Icons.arrow_forward, color:Colors.white),
+          )
       ),
     );
   }

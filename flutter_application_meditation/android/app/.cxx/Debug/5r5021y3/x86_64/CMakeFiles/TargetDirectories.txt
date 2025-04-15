@@ -1,0 +1,2 @@
+C:/Users/emili/Downloads/flutter_aplication_meditation/flutter_application_meditation/android/app/.cxx/Debug/5r5021y3/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/emili/Downloads/flutter_aplication_meditation/flutter_application_meditation/android/app/.cxx/Debug/5r5021y3/x86_64/CMakeFiles/rebuild_cache.dir
