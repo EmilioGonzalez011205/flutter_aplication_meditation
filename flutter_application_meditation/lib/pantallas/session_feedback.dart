@@ -105,7 +105,7 @@ class SessionFeedback extends StatelessWidget {
           Positioned(
             left: 0,
             right: 0,
-            top: 850,
+            top: 920,
             child: Container(
               padding: EdgeInsets.all(16),
               margin: EdgeInsets.symmetric(horizontal: 20),
